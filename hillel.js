@@ -36,3 +36,13 @@ const secondsInOneHour = 3600;
 let getSecondsInHours = hours * secondsInOneHour;
 
 alert(getSecondsInHours);
+
+// HOME_WORK_5
+
+const numberOne = parseInt(prompt('Enter the first number'));
+const numberTwo = parseInt(prompt('Enter the second number'));
+const numberThree = parseInt(prompt('Enter the first number'));
+let total = numberOne + numberTwo + numberThree;
+let arithmeticMean = total / 3;
+
+alert(arithmeticMean);
