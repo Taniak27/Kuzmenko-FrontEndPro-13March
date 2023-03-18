@@ -1,3 +1,4 @@
+//HOME_WORK_2
 /*
 let role = 'The student - ';
 let surname = 'Tatiana Kuzmenko ';
