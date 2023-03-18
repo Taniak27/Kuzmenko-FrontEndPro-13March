@@ -27,7 +27,7 @@ let division = firstNumber / secondNumber;
 alert(adding);
 alert(subctraction);
 alert(multiplying);
-alert(division);
+alert(division); 
 
 // HOME_WORK_4
 
