@@ -27,3 +27,11 @@ alert(adding);
 alert(subctraction);
 alert(multiplying);
 alert(division);
+
+// HOME_WORK_4
+
+const hours = parseInt(prompt('Enter the number of hours'));
+const secondsInOneHour = 3600;
+let getSecondsInHours = hours * secondsInOneHour;
+
+alert(getSecondsInHours);
