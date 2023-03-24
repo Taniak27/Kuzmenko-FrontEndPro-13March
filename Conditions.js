@@ -10,7 +10,7 @@ switch (numOrStr) {
     case '':
         alert('Empty String')
         break;
-    case NaN:
+    case isNaN(+numOrStr):
         alert('number is Ba_NaN')
         break;
     default:
