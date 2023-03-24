@@ -3,14 +3,14 @@
 let numOrStr = prompt('input number or string');
 alert(numOrStr)
 
-switch (true) {
-    case (numOrStr === null):
+switch (numOrStr) {
+    case null:
         alert('ви скасували')
         break;
-    case (numOrStr.trim() === ''):
+    case '':
         alert('Empty String')
         break;
-    case isNaN( +numOrStr):
+    case NaN:
         alert('number is Ba_NaN')
         break;
     default:
