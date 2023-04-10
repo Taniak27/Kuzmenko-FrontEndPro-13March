@@ -1,4 +1,3 @@
-
 //Task_1
 let arr = [6, 4, 'boy', 3]; 
 
