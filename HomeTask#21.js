@@ -57,6 +57,7 @@ class Car {
   }
 }
 
+
 let person1 = new Person('Tania', 27);
 person1.showInfo();
 let person2 = new Person('Nina', 29);
