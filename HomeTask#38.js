@@ -1,7 +1,7 @@
-//1)
+//1
 let newWindow = window.open("https://github.com/Taniak27/Kuzmenko-FrontEndPro-13March/", "_blank");
 
-// Закриття вікна через 3 секунди
+// 2
 setTimeout(function() {
   newWindow.close();
 }, 3000);
