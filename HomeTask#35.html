@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Слайдер зображень</title>
+    <style>
+      .slider-container {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+      }
+
+      .slider-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slider-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ddd;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .slider-button.next {
+        right: 10px;
+      }
+
+      .slider-button.prev {
+        left: 10px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Слайдер зображень</h1>
+    <div class="slider-container">
+      <img class="slider-image" src="https://raw.githubusercontent.com/Taniak27/Pictures/main/img/5.jpg" alt="Зображення 1">
+      <img class="slider-image hidden" src="https://raw.githubusercontent.com/Taniak27/Pictures/main/img/9.jpg" alt="Зображення 2">
+      <img class="slider-image hidden" src="https://raw.githubusercontent.com/Taniak27/Pictures/main/img/6.jpg" alt="Зображення 3">
+      <img class="slider-image hidden" src="https://raw.githubusercontent.com/Taniak27/Pictures/main/img/7.jpg" alt="Зображення 4">
+
+      <div class="slider-button next" onclick="nextImage()">Next</div>
+      <div class="slider-button prev" onclick="prevImage()">Prev</div>
+    </div>
+
+    <script src="HomeTask#35.js"></script>
+  </body>
+</html>
