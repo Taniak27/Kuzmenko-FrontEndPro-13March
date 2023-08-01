@@ -16,6 +16,7 @@ console.log(firstNumber + ' ' + secondNumber + ' ' + thirdNumber + ' ' + fourthN
 
 //HOME_WORK_3
 
+/*
 const firstNumber = parseInt(prompt('Enter the first number'));
 const secondNumber = parseInt(prompt('Enter the second number'));
 let adding = firstNumber + secondNumber;
@@ -27,3 +28,12 @@ alert(adding);
 alert(subctraction);
 alert(multiplying);
 alert(division);
+*/
+
+// HOME_WORK_4
+
+const hours = parseInt(prompt('Enter the number of hours'));
+const secondsInOneHour = 3600;
+let getSecondsInHours = hours * secondsInOneHour;
+
+alert(getSecondsInHours);

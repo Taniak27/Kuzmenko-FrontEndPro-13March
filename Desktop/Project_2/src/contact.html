@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Contact form</title>
+</head>
+<body>
+
+  <style>
+
+    .main-secrion {
+      height: 100px;
+      margin-bottom: 0px;
+    }
+
+  </style>
+
+  <!--First section-->
+  <div class="main-secrion">
+    <div class="container main-secrion__nav-container">
+      
+      <!--Navigation menu-->
+      <header class="main-secrion__header">
+        <a href="index.html"><img class="main-secrion__logo" src="icons/Logo.svg" alt=""></a>
+      </header>
+      <nav class="main-secrion__nav nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__list-item"><a class="data" href="test.html">Take the test <img src="icons/Black_arrow.svg"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+   
+  <!--Second section-->
+  <div class="box_container"> 
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h3 class="contact_heading">GET IN TOUCH</h3>
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Your email" required>
+      <input type="text" id="phone" placeholder="Phone no." required>
+      <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+      <button class="btn btn-1 btn-sep icon-info" type="submit">Send</button>
+    </form> 
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      // Replace these with your actual SMTP credentials
+      let yourUsername = "YOUR_SMTP_USERNAME";
+      let yourPassword = "YOUR_SMTP_PASSWORD";
+  
+      Email.send({
+        SecureToken : "YOUR_SMTP_TOKEN", // Get this token from SMTPJS.com after signing up
+        To : 'tattinus@icloud.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("email").value
+          + "<br> Phone No: " + document.getElementById("phone").value
+          + "<br> Message: " + document.getElementById("message").value
+      }).then(
+      message => alert("Message Sent Successfully")
+      );
+    }
+  </script>
+  
+
+  <!--Footer-->
+  <div class="footer-section">
+    <div class="container">
+      <div class="first_line">
+        <a href=""><img class="main-secrion__logo" src="icons/Logo.svg" alt=""></a>
+        <p class="cont_word"><a class="data" href="test.html">Contact</a></p>
+      </div>
+
+      <div class="second_line">
+        <div class="social-media__bottom-container">
+          <div class="social-media__bottom-container__icon"><a href="#">
+            <img src="/src/icons/Telegram _icon.svg" alt="">
+          </a></div>
+          <div class="social-media__bottom-container__icon"><a><img src="/src/icons/Instagram_icon.svg" href="#" alt=""></a></div>
+          <div class="social-media__bottom-container__icon last-element"><img src="/src/icons/Facebook_icon.svg" alt=""></div>
+
+          <div class="cont_info">
+          <p class="cont_info__tel">Phone: <a href="tel:0988453528" class="data">(098) 8453528 </a></p>
+          <br>
+          <p>E-mail: <a href="mailto: mahasi1995@gmail.com" class="data">mahasi1995@gmail.com</a></p>
+          <br>
+          <p>Mon - Fri: &nbsp; 9:00AM - 5:00PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
